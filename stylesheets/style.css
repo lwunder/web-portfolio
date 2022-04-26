@@ -1,6 +1,5 @@
 
 * {
-  background-color: #75584B;
   font-family: 'Alegreya Sans', 'Verdana', sans-serif;
   font-size: 1em;
   color: white;
@@ -11,7 +10,20 @@ img {
   border-color: #EED4BE;
 }
 
+.bg {
+  background: #75584B;
+}
+
+/********************************** BUTTONS **********************************/
+button {
+  background: none;
+  border: none;
+}
+
 /****************************** NAVIGATION BAR ******************************/
+nav {
+  border-bottom: solid;
+}
 
 #name-logo {
   float: left;
@@ -23,30 +35,94 @@ img {
 
 #name-logo:hover {
   text-shadow: 2px 2px 5px black;
-  transition: 0.2s;
+  transition: 0.2s ease;
 }
 
-nav ul {
+.nav-item {
+  padding: 10px;
+}
+
+a.nav-link {
+  color: white;
+}
+
+a.nav-link:hover {
+  font-weight: bold;
+  color: white;
+}
+
+/*********************************** FOOTER ***********************************/
+
+footer {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+}
+
+footer ul {
   list-style-type: none;
   margin: 0;
-  float: right;
 }
 
-nav li {
+footer li {
+  padding: 0 5px;
   display: inline;
-  float: left;
-  font-size: 1.2em;
-  padding: 5px 30px;
 }
 
-nav a {
-  color: white;
+/****************************** HOME PAGE ******************************/
+#welcome-center {
+  position: absolute;
+  top: 20%;
+  margin: auto;
 }
 
-nav a:hover {
-  font-weight: bold;
-  text-decoration: none;
-  color: white;
+#welcome-photo {
+  z-index: 1;
+  position: relative;
+}
+
+#welcome-intro{
+  position: absolute;
+  z-index: 2;
+  top: 20%;
+  right: 90%;
+  background: white;
+  max-width: 100%;
+}
+
+#welcome-intro-text {
+  padding: 10px;
+}
+
+#welcome-intro-text h1, p, mark{
+  color: black;
+}
+
+#welcome-intro-text mark {
+  background: #EED4BE;
+}
+
+/****************************** GALLERY PAGE ******************************/
+/* line code taken from https://stackoverflow.com/questions/5214127/css-technique-for-a-horizontal-line-with-words-in-the-middle */
+h1.heading {
+  display: flex;
+  flex-direction: row;
+  padding-top: 2em;
+}
+
+h1.heading:before, h1.heading:after{
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid;
+  margin: auto;
+}
+
+h1.heading:before {
+  margin-right: 10px;
+}
+
+h1.heading:after {
+  margin-left: 10px;
 }
 
 /****************************** MISCELLANEOUS ******************************/
