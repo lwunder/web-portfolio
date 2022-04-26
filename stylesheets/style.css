@@ -1,0 +1,52 @@
+
+* {
+  background-color: #75584B;
+  font-family: 'Alegreya Sans', 'Verdana', sans-serif;
+  font-size: 1em;
+  color: white;
+}
+
+img {
+  border-width: 2px;
+  border-color: #EED4BE;
+}
+
+/****************************** NAVIGATION BAR ******************************/
+
+#name-logo {
+  float: left;
+  font-size: 3em;
+  font-family: 'Water Brush', cursive;
+  padding: 5px 20px;
+  color: white;
+}
+
+#name-logo:hover {
+  text-shadow: 2px 2px 5px black;
+  transition: 0.2s;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  float: right;
+}
+
+nav li {
+  display: inline;
+  float: left;
+  font-size: 1.2em;
+  padding: 5px 30px;
+}
+
+nav a {
+  color: white;
+}
+
+nav a:hover {
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+/****************************** MISCELLANEOUS ******************************/
