@@ -79,13 +79,15 @@ footer li {
 #welcome-photo {
   z-index: 1;
   position: relative;
+  left: 50%;
 }
 
 #welcome-intro{
   position: absolute;
   z-index: 2;
-  top: 20%;
+  top: 10%;
   right: 90%;
+  height: 80%;
   background: white;
   max-width: 100%;
 }
