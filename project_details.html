@@ -42,23 +42,77 @@
     </header>
 
     <!-- MAIN BODY -->
-    <div class="container">
-      <a href="gallery.html" class="back-button">Go back to all projects</a>
-      <h1 id="project-title"></h1>
-      <h3>Date</h3>&nbsp;&nbsp;
-      <h3>Role</h3>&nbsp;&nbsp;
-      <h3>Technologies</h3>&nbsp;&nbsp;
-      <a href="github.com">GitHub</a>&nbsp;&nbsp;<a href="youtube.com">Video</a>
+    <div class="container" id="project-details">
+      <div class="row">
+        <a href="gallery.html" id="back-button"><button type="button"><ion-icon id="left-arrow-button" name="chevron-back-outline"></ion-icon>Go back to all projects</button></a>
+      </div>
+      <br/><br/>
+      <div class="row">
+        <h1 id="project-title">Super Mario ver.112</h1>
+      </div>
       <br/>
+      <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-8">
+          <p><b>Date</b>&emsp;April 2021</p>
+        </div>
+        <div class="col-sm-3"></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-8">
+          <p><b>Role</b>&emsp;Program Engineer</p>
+        </div>
+        <div class="col-sm-3"></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-8">
+          <p><b>Technologies</b>&emsp;Python</p>
+        </div>
+        <div class="col-sm-3"></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-8">
+          <a href="github.com" target="blank">GitHub</a>&emsp;<a href="https://www.youtube.com/watch?v=L9ph8VDHbcs" target="blank">Video</a>
+        </div>
+        <div class="col-sm-3"></div>
+      </div>
+      
       <br/>
-      <div id="project-description"></div>
+      <div id="project-description">
+        <div class="row">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-8">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
+              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+              aliquip ex ea commodo consequat. Duis aute irure dolor in 
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+              pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+              culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="col-sm-3"></div>
+        </div>
+      </div>
+      <div id="project-media">
+        <div class="row">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-8">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/L9ph8VDHbcs" title="Super Mario project video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="col-sm-3"></div>
+        </div>
+      </div>
+      
     </div>
 
     <!-- FOOTER -->
     <footer>
       <ul>
-        <li><a href="https://www.linkedin.com/in/alice-hong-4296771b2/" target="blank"><ion-icon name="logo-linkedin" size="large"></ion-icon></a></li>
-        <li><button type="button" onclick="copyEmailToClipboard()" data-bs-toggle="popover" data-bs-content="Email copied to clipboard!" data-bs-placement="top" data-bs-trigger="focus"><ion-icon name="mail-outline" size="large"></ion-icon></button></li>
+        <li><a href="https://www.linkedin.com/in/alice-hong-4296771b2/" target="blank"><button type="button"><ion-icon class="footer-button" name="logo-linkedin" size="large"></ion-icon></button></a></li>
+        <li><button type="button" onclick="copyEmailToClipboard()" data-bs-toggle="popover" data-bs-content="Email copied to clipboard!" data-bs-placement="top" data-bs-trigger="focus"><ion-icon class="footer-button" name="mail-outline" size="large"></ion-icon></button></li>
       </ul>
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

@@ -64,6 +64,14 @@ footer li {
   display: inline;
 }
 
+.footer-button {
+  transition: all 0.3s ease;
+}
+
+button:hover .footer-button {
+  transform: translate(0px, -5px);
+}
+
 /****************************** HOME PAGE ******************************/
 #welcome-center {
   position: absolute; 
@@ -105,13 +113,13 @@ footer li {
   transform: translate(0px,-5px);
 }
 
-#arrow-button {
+#right-arrow-button {
   transform: translate(-50px, 2px);
   transition: all .5s ease;
   padding: 0;
 }
 
-button:hover #arrow-button {
+button:hover #right-arrow-button {
   transform: translate(0px, 2px);
 }
 
@@ -223,4 +231,37 @@ h1.heading:after {
 
 .experience ul {
   list-style-type: none;
+}
+
+/****************************** PROJECT DETAILS ******************************/
+#project-title {
+  border-bottom: white solid 1px;
+}
+
+#project-details a, p{
+  color: white;
+}
+
+#project-details a:hover {
+  color: rgba(255, 255, 255, 0.561);
+}
+
+#left-arrow-button {
+  transform: translate(0px, 2px);
+  transition: all .5s ease;
+}
+
+#project-details button {
+  position: absolute;
+  left: 50px;
+  transition: all .5s ease;
+}
+
+button:hover #left-arrow-button {
+  transform: translate(-5px, 2px);
+  
+}
+
+#project-details button:hover {
+  color: rgba(255, 255, 255, 0.7);
 }
