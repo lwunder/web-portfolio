@@ -73,24 +73,51 @@ footer li {
 #welcome-center {
   position: absolute; 
   top: 20%;
-  /* margin: auto; */
+  margin: 0 auto;
 }
 
-#welcome-photo {
+#welcome-elements {
   z-index: 1;
   position: absolute; /* absolute = relative to parent element */
-  right:0px;
+  right:-50px;
 }
 
-#welcome-intro{
+#welcome-intro {
   position: absolute;
   z-index: 2;
-  top: 80px;
+  top: 5%;
   right: 380px;
-  height: 380px;
+  height: 90%;
+  width: 100%;
   background: white;
   max-width: 100%;
-  padding: 10px;
+  padding: 20% 10%;
+}
+
+#welcome-intro button {
+  color: white;
+  background: #EED4BE;
+  border: none;
+  width: 140px;
+  padding: 10px 24px;
+  border-radius: 5px;
+  transition: all .5s ease;
+  overflow: hidden;
+}
+
+#welcome-intro button:hover {
+  background: #75584B;
+  transform: translate(0px,-5px);
+}
+
+#arrow-button {
+  transform: translate(-50px, 2px);
+  transition: all .5s ease;
+  padding: 0;
+}
+
+button:hover #arrow-button {
+  transform: translate(0px, 2px);
 }
 
 #center-row {
