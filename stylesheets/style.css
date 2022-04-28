@@ -35,7 +35,7 @@ nav {
 
 #name-logo:hover {
   text-shadow: 2px 2px 5px black;
-  transition: 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .nav-item {
@@ -71,36 +71,37 @@ footer li {
 
 /****************************** HOME PAGE ******************************/
 #welcome-center {
-  position: absolute;
+  position: absolute; 
   top: 20%;
-  margin: auto;
+  /* margin: auto; */
 }
 
 #welcome-photo {
   z-index: 1;
-  position: relative;
-  left: 50%;
+  position: absolute; /* absolute = relative to parent element */
+  right:0px;
 }
 
 #welcome-intro{
   position: absolute;
   z-index: 2;
-  top: 10%;
-  right: 90%;
-  height: 80%;
+  top: 80px;
+  right: 380px;
+  height: 380px;
   background: white;
   max-width: 100%;
-}
-
-#welcome-intro-text {
   padding: 10px;
 }
 
-#welcome-intro-text h1, p, mark{
+#center-row {
+  position: relative;
+}
+
+#welcome-intro h1, p, mark{
   color: black;
 }
 
-#welcome-intro-text mark {
+#welcome-intro mark {
   background: #EED4BE;
 }
 
@@ -125,6 +126,50 @@ h1.heading:before {
 
 h1.heading:after {
   margin-left: 10px;
+}
+
+/* Card Based Layout - Base styles */
+/* Adjusted from https://ordinarycoders.com/blog/article/codepen-bootstrap-card-hovers */
+.photo-card {
+  background: rgba(0,0,0,0);
+  padding: 0;
+  overflow: hidden;
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.photo-card h2 {
+  text-align: left;
+  border-bottom: white solid 1px;
+  position: relative;
+  bottom: 0;
+  padding: 5%;
+  z-index: 1;
+  transition: all 0.5s ease;
+}
+
+.photo-card img {
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  transition: all 1.5s ease;
+}
+
+.photo-card a {
+  text-decoration: none;
+}
+
+/* Gallery page hover effect */
+
+.photo-card:hover img {
+  opacity: 0.3;
+  transform: scale(1.25);
+}
+
+.photo-card:hover h2 {
+  transform: translate(2px, -69px);
 }
 
 /****************************** MISCELLANEOUS ******************************/
