@@ -199,4 +199,8 @@ h1.heading:after {
   transform: translate(2px, -69px);
 }
 
-/****************************** MISCELLANEOUS ******************************/
+/****************************** ABOUT ME PAGE ******************************/
+#pfp {
+  margin: 0 auto;
+  top: 10%;
+}
