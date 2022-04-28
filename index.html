@@ -23,7 +23,7 @@
     <link rel="manifest" href="favicon_io/site.webmanifest">
   </head>
 
-  <body class="bg">
+  <body class="bg" onload="loadFunctions()">
     <header>
       <a href="index.html"><h1 id="name-logo">alice h.</h1></a>
       <nav>
@@ -64,7 +64,7 @@
     <footer>
       <ul>
         <li><a href="https://www.linkedin.com/in/alice-hong-4296771b2/" target="blank"><ion-icon name="logo-linkedin" size="large"></ion-icon></a></li>
-        <li><button onclick="copyEmailToClipboard()"><ion-icon name="mail-outline" size="large"></ion-icon></button></li>
+        <li><button type="button" onclick="copyEmailToClipboard()" data-bs-toggle="popover" data-bs-content="Email copied to clipboard!" data-bs-placement="top" data-bs-trigger="focus"><ion-icon name="mail-outline" size="large"></ion-icon></button></li>
       </ul>
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
