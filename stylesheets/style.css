@@ -127,7 +127,11 @@ button:hover #right-arrow-button {
   position: relative;
 }
 
-#welcome-intro h1, p {
+#welcome-intro h1 {
+  color: black;
+}
+
+#welcome-intro p {
   color: black;
 }
 
